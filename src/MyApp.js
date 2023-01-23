@@ -43,7 +43,7 @@ async function makePostCall(person){
 function updateList(person) { 
    makePostCall(person).then( result => {
    if (result && result.status === 201)
-      setCharacters([...characters, person] );
+      setCharacters([...characters, result.data] );
    });
 }
 
