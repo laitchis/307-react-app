@@ -1,6 +1,5 @@
 import Table from './Table';
 import Form from './Form';
-import DeleteButton from './DeleteButton';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 
@@ -73,7 +72,6 @@ useEffect(() => {
     <div className="container">
       <Table characterData={characters} removeCharacter={removeOneCharacter} />
       <Form handleSubmit={updateList} />
-      {/* <DeleteButton deleteAll = {deleteAll}/> */}
     </div>
   )
   
